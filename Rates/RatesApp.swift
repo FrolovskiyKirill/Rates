@@ -9,13 +9,16 @@ import SwiftUI
 
 @main
 struct RatesApp: App {
+    
+    @StateObject var vm = HomeViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationStack {
                 HomeView()
                     .navigationBarHidden(true)
             }
-            
+            .environmentObject(vm)
         }
     }
 }

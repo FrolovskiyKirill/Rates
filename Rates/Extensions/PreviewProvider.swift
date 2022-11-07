@@ -13,13 +13,14 @@ extension PreviewProvider {
     static var dev: DevoloperPreview {
         return DevoloperPreview.instance
     }
-    
 }
 
 class DevoloperPreview {
     
     static let instance = DevoloperPreview()
     private init() {}
+    
+    let homeVM = HomeViewModel()
     
     let coin = CoinModel(
        id: "bitcoin",
