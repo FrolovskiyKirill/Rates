@@ -18,7 +18,7 @@ struct CoinRowView: View {
             Spacer()
             centerColumn
             rightColumn
-            .frame(width: UIScreen.main.bounds.width / 3, alignment: .trailing)
+            
         }
         .font(.subheadline)
     }
@@ -34,7 +34,6 @@ struct CoinRowView_Previews: PreviewProvider {
                 .previewLayout(.sizeThatFits)
                 .preferredColorScheme(.dark)
         }
-        
     }
 }
 
@@ -83,5 +82,6 @@ extension CoinRowView {
                     )
             }
         }
+        .frame(width: UIScreen.main.bounds.width / 3, alignment: .trailing)
     }
 }
