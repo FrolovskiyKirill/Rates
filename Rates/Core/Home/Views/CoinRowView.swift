@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CoinRowView: View {
     
+    let smth = 123
     let coin: CoinModel
     let showHoldingColumn: Bool
     
