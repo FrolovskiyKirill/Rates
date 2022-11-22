@@ -13,11 +13,10 @@ class LocalFileManager {
     static let instanse = LocalFileManager()
     private init() { }
     
-    func saveImage(image: UIImage) {
+    func saveImage(image: UIImage, imageName: String, folderName: String) {
         
         guard let data = image.pngData(),
-              let url = URL(string: "")
-        else { return }
+              let url = getURLForImage(imageName: imageName, folderName: folderName) else { return }
         
         do {
             try data.write(to: url)
@@ -26,12 +25,20 @@ class LocalFileManager {
         }
     }
     
-    private func getURLForFolder(name: String) -> URL? {
-        
+    
+    
+    private func getURLForFolder(folderName: String) -> URL? {
         guard let url = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else {
             return nil
         }
-        return url.appendingPathComponent(name)
+        return url.appendingPathComponent(folderName)
+    }
+    
+    private func getURLForImage(imageName: String, folderName: String) -> URL? {
+        guard let folderURL = getURLForFolder(folderName: folderName) else {
+            return nil
+        }
+        return folderURL.appendingPathComponent(imageName + ".png")
     }
 }
 
