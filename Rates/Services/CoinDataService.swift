@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class CoinDateService {
+class CoinDataService {
     
     var coinSubscription: AnyCancellable?
     

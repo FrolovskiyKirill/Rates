@@ -15,7 +15,7 @@ class HomeViewModel: ObservableObject {
     
     @Published var searchText: String = ""
     
-    private let dataService = CoinDateService()
+    private let dataService = CoinDataService()
     private var cancellables = Set<AnyCancellable>()
     
     init() {

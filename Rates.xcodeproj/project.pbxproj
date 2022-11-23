@@ -10,7 +10,7 @@
 		ED41F132292D42270017833D /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F131292D42270017833D /* SearchBarView.swift */; };
 		ED41F134292E88400017833D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED41F133292E88400017833D /* UIApplication.swift */; };
 		ED4F82D5291982AE00CCA8BF /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82D4291982AE00CCA8BF /* HomeViewModel.swift */; };
-		ED4F82D8291AD69000CCA8BF /* CoinDateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82D7291AD69000CCA8BF /* CoinDateService.swift */; };
+		ED4F82D8291AD69000CCA8BF /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82D7291AD69000CCA8BF /* CoinDataService.swift */; };
 		ED4F82DB291D61BE00CCA8BF /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82DA291D61BE00CCA8BF /* NetworkingManager.swift */; };
 		ED4F82DE2922B21800CCA8BF /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82DD2922B21800CCA8BF /* CoinImageView.swift */; };
 		ED4F82E02922B64900CCA8BF /* CoinImageServise.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4F82DF2922B64900CCA8BF /* CoinImageServise.swift */; };
@@ -34,7 +34,7 @@
 		ED41F131292D42270017833D /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		ED41F133292E88400017833D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		ED4F82D4291982AE00CCA8BF /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		ED4F82D7291AD69000CCA8BF /* CoinDateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDateService.swift; sourceTree = "<group>"; };
+		ED4F82D7291AD69000CCA8BF /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		ED4F82DA291D61BE00CCA8BF /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		ED4F82DD2922B21800CCA8BF /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		ED4F82DF2922B64900CCA8BF /* CoinImageServise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageServise.swift; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 		ED4F82D6291AD60A00CCA8BF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				ED4F82D7291AD69000CCA8BF /* CoinDateService.swift */,
+				ED4F82D7291AD69000CCA8BF /* CoinDataService.swift */,
 				ED4F82DF2922B64900CCA8BF /* CoinImageServise.swift */,
 			);
 			path = Services;
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4F82D8291AD69000CCA8BF /* CoinDateService.swift in Sources */,
+				ED4F82D8291AD69000CCA8BF /* CoinDataService.swift in Sources */,
 				EDA1BC122917D3DD00DBA53B /* CoinRowView.swift in Sources */,
 				ED7A2A792909943100F3E58C /* ContentView.swift in Sources */,
 				ED7A2A8E290D67AC00F3E58C /* HomeView.swift in Sources */,
