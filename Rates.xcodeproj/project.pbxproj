@@ -31,6 +31,8 @@
 		ED9F235929363074009A211D /* MarketDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235829363074009A211D /* MarketDataModel.swift */; };
 		ED9F235B29364EDD009A211D /* MarketDataServce.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235A29364EDD009A211D /* MarketDataServce.swift */; };
 		ED9F235D29365C6E009A211D /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235C29365C6E009A211D /* PortfolioView.swift */; };
+		ED9F235F293669DC009A211D /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235E293669DC009A211D /* XMarkButton.swift */; };
+		ED9F236129379F92009A211D /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F236029379F92009A211D /* CoinLogoView.swift */; };
 		EDA1BC122917D3DD00DBA53B /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BC112917D3DD00DBA53B /* CoinRowView.swift */; };
 		EDA1BC142917D4FA00DBA53B /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BC132917D4FA00DBA53B /* PreviewProvider.swift */; };
 		EDA1BC162917E19100DBA53B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BC152917E19100DBA53B /* Double.swift */; };
@@ -62,6 +64,8 @@
 		ED9F235829363074009A211D /* MarketDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataModel.swift; sourceTree = "<group>"; };
 		ED9F235A29364EDD009A211D /* MarketDataServce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataServce.swift; sourceTree = "<group>"; };
 		ED9F235C29365C6E009A211D /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		ED9F235E293669DC009A211D /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		ED9F236029379F92009A211D /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		EDA1BC112917D3DD00DBA53B /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		EDA1BC132917D4FA00DBA53B /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		EDA1BC152917E19100DBA53B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			children = (
 				ED4F82DD2922B21800CCA8BF /* CoinImageView.swift */,
 				ED4F82E12922BAF600CCA8BF /* CoinImageViewModel.swift */,
+				ED9F236029379F92009A211D /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -209,6 +214,7 @@
 				ED41F130292D41FC0017833D /* SearchBar */,
 				ED4F82DC2922B1EB00CCA8BF /* CoinImage */,
 				ED7A2A90290D6C7100F3E58C /* CircleButton */,
+				ED9F235E293669DC009A211D /* XMarkButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				ED4F82D8291AD69000CCA8BF /* CoinDataService.swift in Sources */,
 				EDA1BC122917D3DD00DBA53B /* CoinRowView.swift in Sources */,
 				ED7A2A792909943100F3E58C /* ContentView.swift in Sources */,
+				ED9F235F293669DC009A211D /* XMarkButton.swift in Sources */,
 				ED7A2A8E290D67AC00F3E58C /* HomeView.swift in Sources */,
 				ED4F82E42924054800CCA8BF /* LocalFileManager.swift in Sources */,
 				ED7A2A772909943100F3E58C /* RatesApp.swift in Sources */,
@@ -326,6 +333,7 @@
 				ED41F132292D42270017833D /* SearchBarView.swift in Sources */,
 				ED9F235729362048009A211D /* HomeStatView.swift in Sources */,
 				ED4F82DB291D61BE00CCA8BF /* NetworkingManager.swift in Sources */,
+				ED9F236129379F92009A211D /* CoinLogoView.swift in Sources */,
 				ED4F82D5291982AE00CCA8BF /* HomeViewModel.swift in Sources */,
 				ED4F82E22922BAF600CCA8BF /* CoinImageViewModel.swift in Sources */,
 				EDA1BC142917D4FA00DBA53B /* PreviewProvider.swift in Sources */,
@@ -471,6 +479,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,6 +509,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
