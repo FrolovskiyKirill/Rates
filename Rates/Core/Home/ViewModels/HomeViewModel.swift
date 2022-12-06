@@ -43,7 +43,7 @@ class HomeViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
-        // update portfolioCoins
+        // update portfolioCoins 
         $allCoins
             .combineLatest(portfolioDataService.$savedEntities)
             .map(mapAllCoinsToPortfolioCoins)
