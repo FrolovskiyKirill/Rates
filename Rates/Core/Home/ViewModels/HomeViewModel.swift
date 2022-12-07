@@ -43,7 +43,7 @@ class HomeViewModel: ObservableObject {
             }
             .store(in: &cancellables)
         
-        // update portfolioCoins 
+        // update portfolioCoins
         $allCoins
             .combineLatest(portfolioDataService.$savedEntities)
             .map(mapAllCoinsToPortfolioCoins)
@@ -107,8 +107,18 @@ class HomeViewModel: ObservableObject {
         case .priceReversed:
             coins.sort(by: { $0.currentPrice < $1.currentPrice })
         }
-        
     }
+    
+//    private func sortPortfolioCoinsIfNeeded(coins: [CoinModel]) -> [CoinModel] {
+//        switch SortOptions {
+//        case .holdings:
+//            return coins.sorted(by: { $0.currentHoldingValue > $1.currentHoldingValue })
+//        case .holdingReversed:
+//            return coins.sorted(by: { $0.currentHoldingValue < $1.currentHoldingValue })
+//        default:
+//            return coins
+//        }
+//    }
     
     private func mapAllCoinsToPortfolioCoins(allcoins: [CoinModel], portfolioEntities: [PortfolioEntity]) -> [CoinModel] {
         allcoins
