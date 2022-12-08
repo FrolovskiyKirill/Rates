@@ -28,6 +28,7 @@
 		ED85DE02293B5C120084FF03 /* PortfolioContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED85DE00293B5C120084FF03 /* PortfolioContainer.xcdatamodeld */; };
 		ED85DE04293B5D560084FF03 /* PortfolioDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DE03293B5D560084FF03 /* PortfolioDataService.swift */; };
 		ED85DE06293C99860084FF03 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DE05293C99860084FF03 /* HapticManager.swift */; };
+		ED85DE0B2941FCF30084FF03 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED85DE0A2941FCF30084FF03 /* DetailView.swift */; };
 		ED9F235229361302009A211D /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235129361302009A211D /* StatisticModel.swift */; };
 		ED9F2355293616B9009A211D /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F2354293616B9009A211D /* StatisticView.swift */; };
 		ED9F235729362048009A211D /* HomeStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F235629362048009A211D /* HomeStatView.swift */; };
@@ -64,6 +65,7 @@
 		ED85DE01293B5C120084FF03 /* PortfolioContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PortfolioContainer.xcdatamodel; sourceTree = "<group>"; };
 		ED85DE03293B5D560084FF03 /* PortfolioDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioDataService.swift; sourceTree = "<group>"; };
 		ED85DE05293C99860084FF03 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		ED85DE0A2941FCF30084FF03 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		ED9F235129361302009A211D /* StatisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
 		ED9F2354293616B9009A211D /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		ED9F235629362048009A211D /* HomeStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				ED7A2A8F290D6C4600F3E58C /* Components */,
 				ED7A2A8A290D676000F3E58C /* Home */,
+				ED85DE072941FC330084FF03 /* Detail */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -245,6 +248,30 @@
 				ED85DE00293B5C120084FF03 /* PortfolioContainer.xcdatamodeld */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		ED85DE072941FC330084FF03 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				ED85DE082941FC8E0084FF03 /* ViewModels */,
+				ED85DE092941FCA10084FF03 /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		ED85DE082941FC8E0084FF03 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ED85DE092941FCA10084FF03 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ED85DE0A2941FCF30084FF03 /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ED9F23532936167F009A211D /* Statistic */ = {
@@ -341,6 +368,7 @@
 				ED7A2A88290D3D4900F3E58C /* Color.swift in Sources */,
 				ED7A2A94290D762200F3E58C /* CircleButtonAnimationView.swift in Sources */,
 				ED41F132292D42270017833D /* SearchBarView.swift in Sources */,
+				ED85DE0B2941FCF30084FF03 /* DetailView.swift in Sources */,
 				ED85DE06293C99860084FF03 /* HapticManager.swift in Sources */,
 				ED9F235729362048009A211D /* HomeStatView.swift in Sources */,
 				ED4F82DB291D61BE00CCA8BF /* NetworkingManager.swift in Sources */,
