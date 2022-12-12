@@ -25,6 +25,7 @@ struct DetailLoadingView: View {
 struct DetailView: View {
     
     @StateObject var vm: DetailViewModel
+    @State private var showFullDescription = false
     private let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     private let spacing: CGFloat = 30
     
@@ -35,18 +36,22 @@ struct DetailView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 20) {
-                Text("")
-                    .frame(height: 150)
-                overviewTitle
-                Divider()
-                overviewGrid
+            
+            VStack {
+                ChartView(coin: vm.coin)
+                    .padding(.vertical)
                 
-                additionalTitle
-                Divider()
-                additionalGrid
+                VStack(spacing: 20) {
+                    overviewTitle
+                    Divider()
+                    descriptionSection
+                    overviewGrid
+                    additionalTitle
+                    Divider()
+                    additionalGrid
+                }
+                .padding()
             }
-            .padding()
         }
         .navigationTitle(vm.coin.name)
         .toolbar {
@@ -62,7 +67,6 @@ struct DetailView_Previews: PreviewProvider {
         NavigationView {
             DetailView(coin: dev.coin)
         }
-        
     }
 }
 
@@ -106,6 +110,34 @@ extension DetailView {
             .bold()
             .foregroundColor(Color.theme.accent)
             .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var descriptionSection: some View {
+        
+        ZStack {
+            if let coinDescription = vm.coinDescription, !coinDescription.isEmpty {
+                
+                VStack(alignment: .leading) {
+                    Text(coinDescription)
+                        .lineLimit(showFullDescription ? nil : 3)
+                        .font(.callout)
+                        .foregroundColor(Color.theme.secondaryText)
+                    
+                    Button {
+                        withAnimation(.linear) {
+                            showFullDescription.toggle()
+                        }
+                    } label: {
+                        Text(showFullDescription ? "Less" : "Read more...")
+                            .font(.caption)
+//                                        .fontWeight(.bold)
+                            .padding(.vertical, 1)
+                    }
+                    .accentColor(Color.blue)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+        }
     }
     
     private var additionalGrid: some View {

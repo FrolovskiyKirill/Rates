@@ -45,6 +45,7 @@
 		EDA1BC162917E19100DBA53B /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA1BC152917E19100DBA53B /* Double.swift */; };
 		EDC1FA07294767FD0006D4D4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA06294767FD0006D4D4 /* ChartView.swift */; };
 		EDC1FA0929479FC00006D4D4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA0829479FC00006D4D4 /* Date.swift */; };
+		EDC1FA0B2947BB1E0006D4D4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA0A2947BB1E0006D4D4 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		EDA1BC152917E19100DBA53B /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		EDC1FA06294767FD0006D4D4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		EDC1FA0829479FC00006D4D4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		EDC1FA0A2947BB1E0006D4D4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				EDA1BC152917E19100DBA53B /* Double.swift */,
 				ED41F133292E88400017833D /* UIApplication.swift */,
 				EDC1FA0829479FC00006D4D4 /* Date.swift */,
+				EDC1FA0A2947BB1E0006D4D4 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -394,6 +397,7 @@
 				ED4F82E22922BAF600CCA8BF /* CoinImageViewModel.swift in Sources */,
 				ED85DE13294341880084FF03 /* DetailViewModel.swift in Sources */,
 				EDA1BC142917D4FA00DBA53B /* PreviewProvider.swift in Sources */,
+				EDC1FA0B2947BB1E0006D4D4 /* String.swift in Sources */,
 				EDA1BC162917E19100DBA53B /* Double.swift in Sources */,
 				ED9F235229361302009A211D /* StatisticModel.swift in Sources */,
 				ED9F235D29365C6E009A211D /* PortfolioView.swift in Sources */,
