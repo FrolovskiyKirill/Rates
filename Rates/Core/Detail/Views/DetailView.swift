@@ -38,42 +38,24 @@ struct DetailView: View {
             VStack(spacing: 20) {
                 Text("")
                     .frame(height: 150)
-                Text("Overview")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(Color.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                overviewTitle
                 Divider()
+                overviewGrid
                 
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    content: {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: StatisticModel(title: "Title", value: "View"))
-                        }
-                })
-                
-                Text("Additional Details")
-                    .font(.title)
-                    .bold()
-                    .foregroundColor(Color.theme.accent)
-                    .frame(maxWidth: .infinity, alignment: .leading)
+                additionalTitle
                 Divider()
-                
-                LazyVGrid(
-                    columns: columns,
-                    alignment: .leading,
-                    spacing: spacing,
-                    content: {
-                        ForEach(0..<6) { _ in
-                            StatisticView(stat: StatisticModel(title: "Title", value: "View"))
-                        }
-                })
+                additionalGrid
             }
+            .padding()
         }
         .navigationTitle(vm.coin.name)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Text(vm.coin.symbol.uppercased())
+                    .font(.headline)
+                    .foregroundColor(Color.theme.secondaryText)
+            }
+        }
     }
 }
 
@@ -84,4 +66,49 @@ struct DetailView_Previews: PreviewProvider {
         }
         
     }
+}
+
+extension DetailView {
+    
+    private var overviewTitle: some View {
+        Text("Overview")
+            .font(.title)
+            .bold()
+            .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var overviewGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            pinnedViews: [],
+            content: {
+                ForEach(vm.overviewSratistic) { stat in
+                    StatisticView(stat: stat)
+                }
+        })
+    }
+    
+    private var additionalTitle: some View {
+        Text("Additional Details")
+            .font(.title)
+            .bold()
+            .foregroundColor(Color.theme.accent)
+            .frame(maxWidth: .infinity, alignment: .leading)
+    }
+    
+    private var additionalGrid: some View {
+        LazyVGrid(
+            columns: columns,
+            alignment: .leading,
+            spacing: spacing,
+            content: {
+                ForEach(vm.additionalSratistic) { stat in
+                    StatisticView(stat: stat)
+                }
+        })
+    }
+    
 }
