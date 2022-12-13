@@ -46,6 +46,7 @@
 		EDC1FA07294767FD0006D4D4 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA06294767FD0006D4D4 /* ChartView.swift */; };
 		EDC1FA0929479FC00006D4D4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA0829479FC00006D4D4 /* Date.swift */; };
 		EDC1FA0B2947BB1E0006D4D4 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA0A2947BB1E0006D4D4 /* String.swift */; };
+		EDC1FA0F2948BFDD0006D4D4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC1FA0E2948BFDD0006D4D4 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		EDC1FA06294767FD0006D4D4 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		EDC1FA0829479FC00006D4D4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		EDC1FA0A2947BB1E0006D4D4 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EDC1FA0E2948BFDD0006D4D4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,8 +306,17 @@
 		EDC1FA0C2948BF500006D4D4 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				EDC1FA0D2948BFAD0006D4D4 /* Views */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		EDC1FA0D2948BFAD0006D4D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EDC1FA0E2948BFDD0006D4D4 /* SettingsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,6 +426,7 @@
 				ED9F235B29364EDD009A211D /* MarketDataServce.swift in Sources */,
 				ED85DE1129433F640084FF03 /* CoinDetailDataService.swift in Sources */,
 				ED85DE04293B5D560084FF03 /* PortfolioDataService.swift in Sources */,
+				EDC1FA0F2948BFDD0006D4D4 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
