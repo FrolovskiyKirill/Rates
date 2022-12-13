@@ -201,6 +201,7 @@
 				ED7A2A8F290D6C4600F3E58C /* Components */,
 				ED7A2A8A290D676000F3E58C /* Home */,
 				ED85DE072941FC330084FF03 /* Detail */,
+				EDC1FA0C2948BF500006D4D4 /* Settings */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -298,6 +299,13 @@
 				ED9F2354293616B9009A211D /* StatisticView.swift */,
 			);
 			path = Statistic;
+			sourceTree = "<group>";
+		};
+		EDC1FA0C2948BF500006D4D4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
